@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AHOW – Reconectando você à sua essência</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- =============================================
+       FONTES
+       - Cormorant Garamond: display elegante, remetendo ao ancestral
+       - Lato: corpo limpo e legível
+  ============================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =============================================
+       NAVBAR
+  ============================================= -->
+    <nav id="navbar" class="transparente">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <a href="#" class="navbar-brand-texto">AHOW</a>
+
+          <!-- Links desktop -->
+          <div class="d-none d-lg-flex align-items-center gap-1">
+            <a href="#sobre" class="nav-link-custom">Sobre o AHOW</a>
+            <a href="#pilares" class="nav-link-custom">Filosofia</a>
+            <a href="#cronicas" class="nav-link-custom">Blog</a>
+            <a href="#cta" class="nav-link-custom">Eventos</a>
+            <a href="#contato" class="nav-link-custom">Contato</a>
+            <!-- Botão secundário: login para membros -->
+            <a href="#" class="btn-nav-login ms-2">Já é membro? Entrar</a>
+            <!-- Botão CTA na navbar -->
+            <a href="#cta" class="btn-nav ms-2">Iniciar Jornada</a>
+          </div>
+
+          <!-- Hamburguer mobile -->
+          <button
+            class="navbar-toggler-custom d-lg-none"
+            id="btn-menu"
+            aria-label="Abrir menu"
+          >
+            <i class="bi bi-list fs-5"></i>
+          </button>
+        </div>
+
+        <!-- Menu mobile colapsável -->
+        <div
+          id="menu-mobile"
+          class="d-lg-none"
+          style="display: none !important; padding-top: 1rem"
+        >
+          <a href="#sobre" class="nav-link-custom d-block py-2">Sobre o AHOW</a>
+          <a href="#pilares" class="nav-link-custom d-block py-2">Filosofia</a>
+          <a href="#cronicas" class="nav-link-custom d-block py-2">Blog</a>
+          <a href="#cta" class="nav-link-custom d-block py-2">Eventos</a>
+          <a href="#contato" class="nav-link-custom d-block py-2">Contato</a>
+          <div class="d-flex gap-2 mt-2 flex-wrap">
+            <a href="#" class="btn-nav-login">Já é membro? Entrar</a>
+            <a href="#cta" class="btn-ahow" style="font-size: 0.75rem"
+              >Iniciar Jornada</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =============================================
+       HERO — Seção principal de entrada
+  ============================================= -->
+    <section id="hero">
+      <!-- Fundo: troque o gradiente por sua foto real de floresta -->
+      <div class="hero-bg"></div>
+
+      <div class="hero-conteudo">
+        <!-- Pequena tagline acima -->
+        <span class="hero-tagline">Um espaço sagrado de reconexão</span>
+
+        <!-- Título principal -->
+        <h1 class="hero-titulo">AHOW</h1>
+
+        <!-- Subtítulo descritivo -->
+        <p class="hero-subtitulo">
+          Reconectando você à sua essência através da sabedoria ancestral e da
+          consciência crescente.
+        </p>
+
+        <!-- Botões de ação -->
+        <div class="hero-botoes">
+          <a href="#sobre" class="btn-outline-ahow">Conheça o Projeto</a>
+          <a href="#pilares" class="btn-ahow">Explorar Caminhos</a>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll animado -->
+      <div
+        class="hero-scroll"
+        onclick="
+          document
+            .getElementById('sobre')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- =============================================
+       O QUE É AHOW — Apresentação do projeto
+  ============================================= -->
+    <section id="sobre">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Coluna da imagem -->
+          <div class="col-md-5 reveal">
+            <!-- Substitua por: <img src="sua-imagem.jpg" alt="Conexão com a natureza" class="sobre-imagem"> -->
+            <div class="sobre-imagem"></div>
+          </div>
+
+          <!-- Coluna do texto -->
+          <div class="col-md-7 reveal reveal-delay-1">
+            <div class="sobre-texto">
+              <span class="label-secao">Propósito</span>
+              <h2 class="sobre-titulo">O Que é <em>AHOW?</em></h2>
+              <p class="sobre-corpo">
+                O AHOW nasce para unir e reconectar entre corpo, mente, emoções,
+                espírito e natureza. É um convite para despertar, ouvir o
+                silêncio e redescobrir os saberes que nos habitam.
+              </p>
+              <p class="sobre-corpo">
+                Nossa missão é facilitar o acesso à sabedoria que nos conecta
+                por gerações, adaptando-a ao contexto de vida contemporânea.
+              </p>
+              <a href="#mitakuye" class="link-seta">
+                Saiba mais sobre nossa história
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       MITAKUYE OYASIN — Filosofia central
+  ============================================= -->
+    <section id="mitakuye">
+      <div class="container">
+        <div class="reveal">
+          <!-- Ornamento circular -->
+          <div class="ornamento mx-auto">
+            <i class="bi bi-infinity"></i>
+          </div>
+
+          <h2 class="mitakuye-titulo">Mitakuye Oyasin</h2>
+          <p class="mitakuye-subtitulo">Somos todos parentes.</p>
+
+          <p class="mitakuye-corpo">
+            Acreditamos na interdependência de todos os fios da teia da vida.
+            Cada passo que damos reverbera na teia do existir. Nossa filosofia é
+            guiada pelo respeito profundo a todos os seres.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       EQUIPE — Quem está por trás do AHOW
+  ============================================= -->
+    <section id="equipe">
+      <div class="container">
+        <span class="label-secao text-center d-block reveal">A Equipe</span>
+        <h2 class="equipe-titulo reveal">Quem está por trás do AHOW</h2>
+
+        <!-- Card centralizado do coordenador -->
+        <div class="row justify-content-center">
+          <div class="col-sm-8 col-md-5 col-lg-4 reveal">
+            <div class="card-membro">
+              <!-- Substitua por: <img src="foto-coordenador.jpg" alt="Nome" class="card-membro-foto"> -->
+              <div class="card-membro-foto"></div>
+              <div class="card-membro-info">
+                <h3 class="card-membro-nome">João Silva</h3>
+                <!-- Substitua o nome pelo nome real -->
+                <p class="card-membro-cargo">Coordenador & Facilitador</p>
+                <p class="card-membro-bio">
+                  Guiado pela sabedoria ancestral, João dedicou anos ao estudo e
+                  vivência do xamanismo. Facilitador de jornadas transformadoras
+                  e guardião de tradições que conectam o ser humano à natureza.
+                </p>
+                <div class="card-membro-social">
+                  <a href="#" aria-label="Instagram"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       PILARES — Grade 2x2 dos quatro caminhos
+  ============================================= -->
+    <section id="pilares">
+      <div class="grade-pilares">
+        <!-- Pilar 1: Natureza (verde escuro) -->
+        <div class="pilar pilar-natureza reveal">
+          <div class="pilar-icone"><i class="bi bi-tree"></i></div>
+          <h3 class="pilar-titulo">Natureza</h3>
+          <p class="pilar-corpo">
+            Nossa "raiz" mora e cresce no tronco da vida ancestral. Honramos a
+            mãe natureza como guia para nossa mais ampla evolução.
+          </p>
+        </div>
+
+        <!-- Pilar 2: Cura (bege neutro) -->
+        <div class="pilar pilar-cura reveal reveal-delay-1">
+          <div class="pilar-icone"><i class="bi bi-heart-pulse"></i></div>
+          <h3 class="pilar-titulo">Cura</h3>
+          <p class="pilar-corpo">
+            O processo interno de cura envolve despertar a compreensão de si
+            mesmo, reconhecendo padrões, emoções e dons.
+          </p>
+        </div>
+
+        <!-- Pilar 3: Sabedoria Ancestral (bege neutro) -->
+        <div class="pilar pilar-sabedoria reveal reveal-delay-2">
+          <div class="pilar-icone"><i class="bi bi-moon-stars"></i></div>
+          <h3 class="pilar-titulo">Sabedoria Ancestral</h3>
+          <p class="pilar-corpo">
+            Resgatamos ensinamentos antigos para nutrir o desafio do presente. O
+            passado ilumina o caminho do hoje.
+          </p>
+        </div>
+
+        <!-- Pilar 4: Interconexão & Consciência (terracota) -->
+        <div class="pilar pilar-consciencia reveal reveal-delay-3">
+          <div class="pilar-icone"><i class="bi bi-diagram-3"></i></div>
+          <h3 class="pilar-titulo">Interconexão &amp; Consciência</h3>
+          <p class="pilar-corpo">
+            Aprofundar nossa conexão com tudo ao redor — pessoas, terra, cosmos
+            — é o primeiro passo de uma transformação duradoura.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       CRÔNICAS DO SER — Prévia do Blog
+  ============================================= -->
+    <section id="cronicas">
+      <div class="container">
+        <!-- Cabeçalho da seção com link "Ver todo o blog" -->
+        <div class="cronicas-cabecalho reveal">
+          <div>
+            <span class="label-secao">Jornadas</span>
+            <h2 class="cronicas-titulo">Crônicas do Ser</h2>
+          </div>
+          <a href="#" class="link-seta d-none d-md-inline-flex">
+            Ver todo o blog <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Grade de 3 cards de artigo -->
+        <div class="row g-4">
+          <!-- Artigo 1 -->
+          <div class="col-md-4 reveal">
+            <article class="card-artigo h-100">
+              <!-- Substitua por <img src="..." class="card-artigo-imagem"> -->
+              <div class="card-artigo-imagem img-placeholder-1"></div>
+              <div class="card-artigo-corpo">
+                <span class="card-artigo-categoria">Meditação</span>
+                <h3 class="card-artigo-titulo">
+                  O silêncio como portal de transformação
+                </h3>
+                <p class="card-artigo-resumo">
+                  Existe uma magia escondida nos pequenos momentos de silêncio
+                  que a agitação pode impugnar em nosso cotidiano.
+                </p>
+                <a href="#" class="card-artigo-link"
+                  >Ler mais <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Artigo 2 -->
+          <div class="col-md-4 reveal reveal-delay-1">
+            <article class="card-artigo h-100">
+              <div class="card-artigo-imagem img-placeholder-2"></div>
+              <div class="card-artigo-corpo">
+                <span class="card-artigo-categoria">Ritual</span>
+                <h3 class="card-artigo-titulo">A magia dos rituais diários</h3>
+                <p class="card-artigo-resumo">
+                  Como pequenas práticas constantes podem se tornar sementes de
+                  consciência e presença plena.
+                </p>
+                <a href="#" class="card-artigo-link"
+                  >Ler mais <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Artigo 3 -->
+          <div class="col-md-4 reveal reveal-delay-2">
+            <article class="card-artigo h-100">
+              <div class="card-artigo-imagem img-placeholder-3"></div>
+              <div class="card-artigo-corpo">
+                <span class="card-artigo-categoria">Ancestralidade</span>
+                <h3 class="card-artigo-titulo">
+                  Honrando nossas raízes para viver
+                </h3>
+                <p class="card-artigo-resumo">
+                  O papel das conexões, dos rituais, da espiritualidade e do
+                  legado ancestral em nossa vida atual.
+                </p>
+                <a href="#" class="card-artigo-link"
+                  >Ler mais <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Link mobile para o blog completo -->
+        <div class="text-center mt-4 d-md-none reveal">
+          <a href="#" class="link-seta"
+            >Ver todo o blog <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       PLANOS — Seção de assinatura
+  ============================================= -->
+    <section id="planos">
+      <div class="container">
+        <span class="label-secao text-center d-block reveal">Sua jornada</span>
+        <h2 class="planos-titulo reveal">
+          Escolha o seu
+          <em style="font-style: italic; color: var(--cor-terra)">caminho.</em>
+        </h2>
+        <p class="planos-subtitulo reveal">
+          Comece gratuitamente e avance no seu ritmo. Cada nível abre uma camada
+          mais profunda da jornada.
+        </p>
+
+        <div class="grade-planos reveal">
+          <!-- Plano Gratuito -->
+          <div class="card-plano">
+            <div class="plano-icone"><i class="bi bi-flower1"></i></div>
+            <div class="plano-nome">Semente</div>
+            <div class="plano-subtitulo-label">Iniciante</div>
+            <div class="plano-preco">
+              <span class="plano-preco-gratis">Gratuito</span>
+            </div>
+            <div class="plano-divisor"></div>
+            <ul class="plano-lista">
+              <li><i class="bi bi-check2"></i> Introdução ao xamanismo</li>
+              <li><i class="bi bi-check2"></i> Artigos do blog</li>
+              <li><i class="bi bi-check2"></i> Meditação introdutória</li>
+              <li><i class="bi bi-check2"></i> Filosofia e conceitos base</li>
+              <li class="bloqueado">
+                <i class="bi bi-lock"></i> Trilhas guiadas
+              </li>
+              <li class="bloqueado">
+                <i class="bi bi-lock"></i> Acompanhamento de rotina
+              </li>
+            </ul>
+            <a href="#" class="btn-plano btn-plano-outline">Começar grátis</a>
+          </div>
+
+          <!-- Plano Intermediário — destaque -->
+          <div class="card-plano card-plano-destaque">
+            <span class="badge-popular">Mais escolhido</span>
+            <div class="plano-icone"><i class="bi bi-fire"></i></div>
+            <div class="plano-nome">Caminhante</div>
+            <div class="plano-subtitulo-label">Intermediário</div>
+            <div class="plano-preco">
+              <span class="plano-preco-valor">R$ 29</span>
+              <span class="plano-preco-periodo">/mês</span>
+            </div>
+            <div class="plano-divisor"></div>
+            <ul class="plano-lista">
+              <li><i class="bi bi-check2"></i> Tudo do plano Semente</li>
+              <li>
+                <i class="bi bi-check2"></i> Trilhas guiadas — Nível 1 e 2
+              </li>
+              <li>
+                <i class="bi bi-check2"></i> Meditações e práticas semanais
+              </li>
+              <li>
+                <i class="bi bi-check2"></i> Rituais e ferramentas sagradas
+              </li>
+              <li><i class="bi bi-check2"></i> Acesso à comunidade</li>
+              <li class="bloqueado">
+                <i class="bi bi-lock"></i> Acompanhamento individual
+              </li>
+            </ul>
+            <a href="#" class="btn-plano btn-plano-branco">Iniciar jornada</a>
+          </div>
+
+          <!-- Plano Avançado -->
+          <div class="card-plano">
+            <div class="plano-icone"><i class="bi bi-moon-stars"></i></div>
+            <div class="plano-nome">Guardião</div>
+            <div class="plano-subtitulo-label">Avançado</div>
+            <div class="plano-preco">
+              <span class="plano-preco-valor">R$ 59</span>
+              <span class="plano-preco-periodo">/mês</span>
+            </div>
+            <div class="plano-divisor"></div>
+            <ul class="plano-lista">
+              <li><i class="bi bi-check2"></i> Tudo do plano Caminhante</li>
+              <li><i class="bi bi-check2"></i> Trilha avançada — Nível 3</li>
+              <li><i class="bi bi-check2"></i> Acompanhamento de rotina</li>
+              <li><i class="bi bi-check2"></i> Sessões ao vivo mensais</li>
+              <li><i class="bi bi-check2"></i> Acesso prioritário a eventos</li>
+              <li><i class="bi bi-check2"></i> Conteúdo exclusivo do João</li>
+            </ul>
+            <a href="#" class="btn-plano btn-plano-terra">Tornar-se guardião</a>
+          </div>
+        </div>
+
+        <!-- Nota de rodapé -->
+        <p class="planos-nota reveal">
+          Valores fictícios — sujeitos a alteração. &nbsp;·&nbsp; 15 dias grátis
+          em qualquer plano pago. &nbsp;·&nbsp; Cancele quando quiser.
+        </p>
+      </div>
+    </section>
+
+    <!-- =============================================
+       FAQ — Dúvidas frequentes
+  ============================================= -->
+    <section id="faq">
+      <div class="container">
+        <span class="label-secao text-center d-block reveal">Dúvidas</span>
+        <h2 class="faq-titulo reveal">
+          Perguntas
+          <em
+            style="
+              font-style: italic;
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+            "
+            >frequentes.</em
+          >
+        </h2>
+        <p class="faq-subtitulo reveal">
+          Não encontrou o que procura? Fale diretamente com a gente.
+        </p>
+
+        <div style="max-width: 720px; margin: 0 auto" class="reveal">
+          <!-- Pergunta 1 -->
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span class="faq-pergunta-texto"
+                >O AHOW oferece planos em grupo ou para empresas?</span
+              >
+              <i class="bi bi-plus faq-icone"></i>
+            </button>
+            <div class="faq-resposta">
+              Sim. Temos condições especiais para grupos, retiros e organizações
+              que desejam integrar práticas de autoconhecimento e bem-estar.
+              Entre em contato via WhatsApp ou e-mail para conversar sobre as
+              opções disponíveis.
+            </div>
+          </div>
+
+          <!-- Pergunta 2 -->
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span class="faq-pergunta-texto"
+                >Qual o prazo para solicitar reembolso ou cancelamento?</span
+              >
+              <i class="bi bi-plus faq-icone"></i>
+            </button>
+            <div class="faq-resposta">
+              Você pode cancelar a assinatura a qualquer momento, sem multa.
+              Para reembolso, aceitamos solicitações em até 7 dias após a
+              cobrança. Basta entrar em contato pelo e-mail ou WhatsApp e
+              processamos rapidamente.
+            </div>
+          </div>
+
+          <!-- Pergunta 3 -->
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span class="faq-pergunta-texto"
+                >Quais são as formas de pagamento aceitas?</span
+              >
+              <i class="bi bi-plus faq-icone"></i>
+            </button>
+            <div class="faq-resposta">
+              Aceitamos cartão de crédito (parcelado em até 12x), PIX e boleto
+              bancário. Todas as transações são processadas com segurança
+              através de plataformas certificadas.
+            </div>
+          </div>
+
+          <!-- Pergunta 4 -->
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span class="faq-pergunta-texto"
+                >Preciso ter experiência prévia com xamanismo?</span
+              >
+              <i class="bi bi-plus faq-icone"></i>
+            </button>
+            <div class="faq-resposta">
+              Não. O AHOW foi pensado para qualquer pessoa, independente de
+              experiência. O plano Semente é gratuito e serve exatamente para
+              você conhecer os conceitos básicos antes de se aprofundar.
+            </div>
+          </div>
+
+          <!-- Pergunta 5 -->
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span class="faq-pergunta-texto"
+                >Como funciona o acompanhamento de rotina do plano
+                Guardião?</span
+              >
+              <i class="bi bi-plus faq-icone"></i>
+            </button>
+            <div class="faq-resposta">
+              O acompanhamento é feito diretamente com o coordenador do AHOW, de
+              forma personalizada. Os detalhes, formato e frequência são
+              definidos junto ao assinante no início da jornada.
+            </div>
+          </div>
+
+          <!-- Pergunta 6 -->
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span class="faq-pergunta-texto"
+                >O conteúdo fica disponível para sempre após assinar?</span
+              >
+              <i class="bi bi-plus faq-icone"></i>
+            </button>
+            <div class="faq-resposta">
+              O acesso ao conteúdo é válido enquanto a assinatura estiver ativa.
+              Ao cancelar, o acesso é encerrado no fim do período já pago. Não
+              há cobrança adicional pela quantidade de conteúdo acessado.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       CONTATO — WhatsApp + Email
+  ============================================= -->
+    <section id="contato">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Texto -->
+          <div class="col-lg-5 reveal">
+            <span class="label-secao">Fale conosco</span>
+            <h2 class="contato-titulo">
+              Tem alguma
+              <em
+                style="
+                  font-style: italic;
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                "
+                >dúvida?</em
+              >
+            </h2>
+            <p class="contato-subtitulo">
+              Nossa equipe está disponível para responder suas perguntas, ajudar
+              com sua assinatura e orientar você no início da jornada.
+            </p>
+            <p style="font-size: 0.82rem; color: var(--cor-texto-suave)">
+              Tempo médio de resposta:
+              <strong style="color: var(--cor-texto)">até 24 horas</strong>
+            </p>
+          </div>
+
+          <!-- Cards de contato -->
+          <div class="col-lg-7 reveal reveal-delay-1">
+            <div class="d-flex flex-column gap-3">
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/5500000000000"
+                target="_blank"
+                class="card-contato"
+                aria-label="Contato via WhatsApp"
+              >
+                <div class="card-contato-icone icone-whatsapp">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="card-contato-info">
+                  <div class="card-contato-label">WhatsApp</div>
+                  <div class="card-contato-valor">+55 (00) 00000-0000</div>
+                  <!-- Substitua pelo número real -->
+                  <div class="card-contato-detalhe">
+                    Clique para iniciar uma conversa
+                  </div>
+                </div>
+                <i
+                  class="bi bi-arrow-right ms-auto"
+                  style="
+                    color: var(--cor-texto-suave);
+                    font-size: 0.9rem;
+                    align-self: center;
+                  "
+                ></i>
+              </a>
+
+              <!-- E-mail -->
+              <a
+                href="mailto:contato@ahow.com.br"
+                class="card-contato"
+                aria-label="Contato via e-mail"
+              >
+                <div class="card-contato-icone icone-email">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="card-contato-info">
+                  <div class="card-contato-label">E-mail</div>
+                  <div class="card-contato-valor">contato@ahow.com.br</div>
+                  <!-- Substitua pelo e-mail real -->
+                  <div class="card-contato-detalhe">
+                    Para dúvidas, parcerias e suporte
+                  </div>
+                </div>
+                <i
+                  class="bi bi-arrow-right ms-auto"
+                  style="
+                    color: var(--cor-texto-suave);
+                    font-size: 0.9rem;
+                    align-self: center;
+                  "
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       CTA — Chamada final para ação
+  ============================================= -->
+    <section id="cta">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="cta-titulo">Sua jornada começa agora.</h2>
+          <p class="cta-corpo">
+            Descubra trilhas criadas para te trazer com mais consciência,
+            equilíbrio e propósito — junto à nossa comunidade de buscadores.
+          </p>
+          <a href="#" class="btn-ahow">Quero Fazer Parte</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       FOOTER
+  ============================================= -->
+    <footer id="footer">
+      <div class="container">
+        <!-- Logo e lema -->
+        <span class="footer-logo">AHOW</span>
+        <p class="footer-lema">Por todas as nossas relações.</p>
+
+        <!-- Links institucionais -->
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+
+        <!-- Redes sociais -->
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="footer-copy">&copy; 2024 AHOW. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // =============================================
+      // NAVBAR: muda de transparente para sólida ao rolar
+      // =============================================
+      const navbar = document.getElementById("navbar");
+
+      function atualizarNavbar() {
+        if (window.scrollY > 60) {
+          navbar.classList.remove("transparente");
+          navbar.classList.add("solida");
+        } else {
+          navbar.classList.remove("solida");
+          navbar.classList.add("transparente");
+        }
+      }
+
+      window.addEventListener("scroll", atualizarNavbar);
+      atualizarNavbar(); // roda uma vez ao carregar
+
+      // =============================================
+      // MENU MOBILE: toggle de abertura/fechamento
+      // =============================================
+      const btnMenu = document.getElementById("btn-menu");
+      const menuMobile = document.getElementById("menu-mobile");
+      let menuAberto = false;
+
+      btnMenu.addEventListener("click", () => {
+        menuAberto = !menuAberto;
+        // Alterna visibilidade do menu mobile
+        menuMobile.style.setProperty(
+          "display",
+          menuAberto ? "block" : "none",
+          "important",
+        );
+        // Troca ícone hamburguer / X
+        btnMenu.querySelector("i").className = menuAberto
+          ? "bi bi-x fs-5"
+          : "bi bi-list fs-5";
+      });
+
+      // Fecha menu ao clicar em qualquer link dentro dele
+      menuMobile.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuAberto = false;
+          menuMobile.style.setProperty("display", "none", "important");
+          btnMenu.querySelector("i").className = "bi bi-list fs-5";
+        });
+      });
+
+      // =============================================
+      // REVEAL: animação de entrada ao rolar a página
+      // Usa IntersectionObserver para detectar elementos visíveis
+      // =============================================
+      const elementosReveal = document.querySelectorAll(".reveal");
+
+      const observadorReveal = new IntersectionObserver(
+        (entradas) => {
+          entradas.forEach((entrada) => {
+            if (entrada.isIntersecting) {
+              // Adiciona classe que dispara a animação CSS
+              entrada.target.classList.add("visivel");
+              // Para de observar após a animação (não repete)
+              observadorReveal.unobserve(entrada.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15, // dispara quando 15% do elemento está visível
+          rootMargin: "0px 0px -40px 0px", // margem negativa: anima um pouco antes de chegar
+        },
+      );
+
+      // Registra todos os elementos com classe .reveal
+      elementosReveal.forEach((el) => observadorReveal.observe(el));
+
+      // =============================================
+      // SMOOTH SCROLL: fecha menu mobile ao clicar
+      // em links âncora da navbar principal
+      // =============================================
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const alvo = document.querySelector(link.getAttribute("href"));
+          if (alvo) {
+            e.preventDefault();
+            alvo.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

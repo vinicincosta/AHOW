@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre o AHOW – Quem somos</title>
+
+    <!-- Fontes: mesmas da index para consistência visual -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style></style>
+  </head>
+
+  <body>
+    <!-- =============================================
+       NAVBAR
+  ============================================= -->
+    <nav id="navbar" class="transparente">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="index.html" class="navbar-brand-texto">AHOW</a>
+          <div class="d-none d-lg-flex align-items-center gap-1">
+            <a href="index.html" class="nav-link-custom">Home</a>
+            <a
+              href="about.html"
+              class="nav-link-custom"
+              style="color: var(--cor-branco)"
+              >Sobre</a
+            >
+            <a href="filosofia.html" class="nav-link-custom">Filosofia</a>
+            <a href="#" class="nav-link-custom">Blog</a>
+            <a href="#" class="nav-link-custom">Eventos</a>
+            <a href="#cta-about" class="btn-nav ms-3">Iniciar Jornada</a>
+          </div>
+          <button
+            class="navbar-toggler-custom d-lg-none"
+            id="btn-menu"
+            aria-label="Menu"
+          >
+            <i class="bi bi-list fs-5"></i>
+          </button>
+        </div>
+        <div
+          id="menu-mobile"
+          style="display: none !important; padding-top: 1rem"
+        >
+          <a href="index.html" class="nav-link-custom d-block py-2">Home</a>
+          <a href="about.html" class="nav-link-custom d-block py-2">Sobre</a>
+          <a href="filosofia.html" class="nav-link-custom d-block py-2"
+            >Filosofia</a
+          >
+          <a href="#" class="nav-link-custom d-block py-2">Blog</a>
+          <a
+            href="#cta-about"
+            class="btn-ahow d-inline-block mt-2"
+            style="font-size: 0.75rem"
+            >Iniciar Jornada</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- =============================================
+       HERO — Frase que fala COM a pessoa
+  ============================================= -->
+    <section id="hero-about">
+      <div class="hero-about-bg"></div>
+      <div class="container">
+        <div class="hero-about-conteudo">
+          <span class="label-secao" style="color: rgba(255, 255, 255, 0.55)"
+            >Quem somos</span
+          >
+          <h1 class="hero-about-titulo">
+            Mais do que uma tradição,<br />uma forma de lembrar quem somos.
+          </h1>
+          <p class="hero-about-subtitulo">
+            O AHOW nasceu para traduzir ensinamentos ancestrais para a vida
+            contemporânea — ajudando pessoas a desenvolverem mais consciência,
+            equilíbrio e conexão consigo mesmas.
+          </p>
+          <a href="#coordenador" class="btn-ahow">Iniciar Exploração</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       CITAÇÃO — Impacto emocional imediato
+       Posicionada cedo para criar identificação
+  ============================================= -->
+    <section id="citacao">
+      <div class="container">
+        <div class="reveal">
+          <span class="aspas">"</span>
+          <p class="citacao-texto">
+            Vivemos numa época marcada pela velocidade, excesso de informações e
+            desconexão. O xamanismo contemporâneo surge como um convite para
+            desacelerar, observar os ciclos da vida e recuperar algo que sempre
+            esteve dentro de nós: a capacidade de ouvir. Ouvir o campo. Ouvir o
+            corpo. Ouvir o coração. Ouvir a própria jornada.
+          </p>
+          <span class="citacao-autor">— Filosofia AHOW</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       O QUE NÃO SOMOS / O QUE SOMOS
+       Posicionamento honesto — filtra o público certo
+       e gera credibilidade com quem tem ceticismo saudável
+  ============================================= -->
+    <section id="nao-somos">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Coluna esquerda: o que não somos -->
+          <div class="col-lg-6 reveal">
+            <span class="label-secao">Clareza antes de tudo</span>
+            <h2 class="nao-somos-intro">
+              Antes de continuar,<br />
+              <em>precisamos ser honestos.</em>
+            </h2>
+
+            <div class="lista-nao">
+              <div class="item-nao">
+                <i class="bi bi-x-circle item-nao-icone"></i>
+                <div class="item-nao-texto">
+                  <strong>Não somos uma religião</strong>
+                  Não exigimos crença, dogma ou filiação. O caminho aqui é de
+                  experiência, não de doutrina.
+                </div>
+              </div>
+
+              <div class="item-nao">
+                <i class="bi bi-x-circle item-nao-icone"></i>
+                <div class="item-nao-texto">
+                  <strong>Não vendemos iluminação</strong>
+                  Não existe atalho para a consciência. O que oferecemos são
+                  ferramentas — o trabalho é seu.
+                </div>
+              </div>
+
+              <div class="item-nao">
+                <i class="bi bi-x-circle item-nao-icone"></i>
+                <div class="item-nao-texto">
+                  <strong>Não temos respostas prontas</strong>
+                  O xamanismo não responde por você. Ele te ensina a fazer as
+                  perguntas certas.
+                </div>
+              </div>
+
+              <div class="item-nao">
+                <i class="bi bi-x-circle item-nao-icone"></i>
+                <div class="item-nao-texto">
+                  <strong>Não somos turismo espiritual</strong>
+                  Respeitamos profundamente as tradições que nos inspiram. O
+                  AHOW não romantiza culturas — as honra.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna direita: o que somos -->
+          <div class="col-lg-6 reveal reveal-delay-1">
+            <div class="somos-bloco">
+              <h3 class="somos-titulo">O que somos, de verdade.</h3>
+
+              <div class="somos-item">
+                <i class="bi bi-check2"></i>
+                <span
+                  >Um espaço de aprendizado estruturado, onde sabedoria
+                  ancestral encontra a vida urbana sem perder
+                  profundidade.</span
+                >
+              </div>
+
+              <div class="somos-item">
+                <i class="bi bi-check2"></i>
+                <span
+                  >Uma comunidade de pessoas que escolheram desacelerar e
+                  observar — os ciclos da natureza, os próprios padrões, o mundo
+                  ao redor.</span
+                >
+              </div>
+
+              <div class="somos-item">
+                <i class="bi bi-check2"></i>
+                <span
+                  >Um convite para desenvolver autoconhecimento através de
+                  práticas concretas: meditações, trilhas guiadas, rituais e
+                  vivências.</span
+                >
+              </div>
+
+              <div class="somos-item">
+                <i class="bi bi-check2"></i>
+                <span
+                  >Um projeto liderado por alguém que viveu o caminho — não
+                  apenas estudou sobre ele.</span
+                >
+              </div>
+
+              <div class="somos-item">
+                <i class="bi bi-check2"></i>
+                <span
+                  >Um lugar onde você pode ir no seu ritmo, sem julgamento e sem
+                  pressa.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       COORDENADOR — Rosto humano do projeto
+       Esta é a seção mais importante do About:
+       confiança vem de pessoas, não de conceitos
+  ============================================= -->
+    <section id="coordenador">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Foto -->
+          <div class="col-md-4 reveal">
+            <!-- Substitua por: <img src="foto-joao.jpg" alt="João" class="coord-foto"> -->
+            <div class="coord-foto"></div>
+          </div>
+
+          <!-- Texto -->
+          <div class="col-md-8 reveal reveal-delay-1">
+            <div class="coord-texto">
+              <span class="label-secao">Quem está por trás do AHOW</span>
+              <h2 class="coord-nome">João Silva</h2>
+              <!-- Substitua pelo nome real -->
+              <p class="coord-cargo">Coordenador & Facilitador</p>
+
+              <p class="coord-bio">
+                João não chegou ao xamanismo por livros. Chegou pela vida —
+                pelas crises que não cabiam em respostas convencionais, pelas
+                perguntas que o mundo moderno não sabia responder. Ao longo de
+                anos, mergulhou em tradições ancestrais, viajou, vivenciou
+                cerimônias, aprendeu com mestres e — principalmente — aprendeu
+                consigo mesmo.
+              </p>
+
+              <!-- Frase de destaque — substitua pela história real do coordenador -->
+              <div class="coord-destaque">
+                "O xamanismo me ensinou que cura não é ausência de dor. É
+                aprender a dançar com ela."
+              </div>
+
+              <p class="coord-bio">
+                Hoje, sua missão é criar pontes: entre o antigo e o
+                contemporâneo, entre o conhecimento e a experiência, entre quem
+                você é e quem você pode ser. O AHOW é o resultado dessa jornada.
+              </p>
+
+              <div class="coord-social mt-3">
+                <a href="#" aria-label="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a href="#" aria-label="YouTube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       VALORES — Dados que ancoram credibilidade
+       Substitua pelos números reais do projeto
+  ============================================= -->
+    <section id="valores">
+      <div class="container">
+        <div class="row g-0 reveal">
+          <div class="col-6 col-md-3 valor-item">
+            <div class="valor-numero">+10</div>
+            <div class="valor-label">Anos de vivência</div>
+            <div class="valor-descricao">
+              Explorando tradições xamânicas em diferentes culturas e
+              territórios.
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 valor-item">
+            <div class="valor-numero">3</div>
+            <div class="valor-label">Níveis de aprendizado</div>
+            <div class="valor-descricao">
+              Trilhas estruturadas do iniciante ao praticante avançado.
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 valor-item">
+            <div class="valor-numero">∞</div>
+            <div class="valor-label">Tradições honradas</div>
+            <div class="valor-descricao">
+              Sabedorias de diferentes povos, todas tratadas com respeito e
+              profundidade.
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 valor-item">
+            <div class="valor-numero">1</div>
+            <div class="valor-label">Propósito central</div>
+            <div class="valor-descricao">
+              Reconectar você ao que sempre esteve dentro de você.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       CTA FINAL
+  ============================================= -->
+    <section id="cta-about">
+      <div class="container">
+        <div class="reveal">
+          <span class="label-secao text-center d-block">Próximo passo</span>
+          <h2 class="cta-titulo">Sua jornada está apenas começando.</h2>
+          <p class="cta-corpo">
+            Explore nossos conteúdos, descubra novos caminhos de
+            autoconhecimento e aproxime-se de uma sabedoria que atravessa
+            gerações.
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="filosofia.html" class="btn-outline-verde"
+              >Conhecer a Filosofia</a
+            >
+            <a href="index.html#cta" class="btn-ahow">Explorar Conteúdos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container">
+        <span class="footer-logo">AHOW</span>
+        <p class="footer-lema">Por todas as nossas relações.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2024 AHOW. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Navbar scroll
+      const navbar = document.getElementById("navbar");
+      function atualizarNavbar() {
+        navbar.classList.toggle("solida", window.scrollY > 60);
+        navbar.classList.toggle("transparente", window.scrollY <= 60);
+      }
+      window.addEventListener("scroll", atualizarNavbar);
+      atualizarNavbar();
+
+      // Menu mobile
+      const btnMenu = document.getElementById("btn-menu");
+      const menuMobile = document.getElementById("menu-mobile");
+      let aberto = false;
+      btnMenu.addEventListener("click", () => {
+        aberto = !aberto;
+        menuMobile.style.setProperty(
+          "display",
+          aberto ? "block" : "none",
+          "important",
+        );
+        btnMenu.querySelector("i").className = aberto
+          ? "bi bi-x fs-5"
+          : "bi bi-list fs-5";
+      });
+      menuMobile.querySelectorAll("a").forEach((l) =>
+        l.addEventListener("click", () => {
+          aberto = false;
+          menuMobile.style.setProperty("display", "none", "important");
+          btnMenu.querySelector("i").className = "bi bi-list fs-5";
+        }),
+      );
+
+      // Scroll reveal
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visivel");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const t = document.querySelector(a.getAttribute("href"));
+          if (t) {
+            e.preventDefault();
+            t.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
