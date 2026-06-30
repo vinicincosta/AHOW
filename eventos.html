@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos – AHOW</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="eventos.css" />
+  </head>
+
+  <body>
+    <!-- ============================================================
+       NAVBAR
+       Idêntica às demais páginas. "Events" aparece destacado.
+  ============================================================ -->
+    <nav id="navbar" class="transparente">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="index.html" class="navbar-brand-texto">AHOW</a>
+
+          <div class="d-none d-lg-flex align-items-center gap-1">
+            <a href="index.html" class="nav-link-custom">Home</a>
+            <a href="about.html" class="nav-link-custom">About</a>
+            <a href="filosofia.html" class="nav-link-custom">Philosophy</a>
+            <a href="#" class="nav-link-custom">Blog</a>
+            <a
+              href="eventos.html"
+              class="nav-link-custom"
+              style="color: var(--cor-branco)"
+              >Events</a
+            >
+            <a href="index.html#contato" class="nav-link-custom">Contact</a>
+            <a href="#" class="btn-nav-login ms-2">Já é membro? Entrar</a>
+            <a href="index.html#planos" class="btn-nav ms-2">Iniciar Jornada</a>
+          </div>
+
+          <button
+            class="navbar-toggler-custom d-lg-none"
+            id="btn-menu"
+            aria-label="Menu"
+          >
+            <i class="bi bi-list fs-5"></i>
+          </button>
+        </div>
+
+        <div
+          id="menu-mobile"
+          style="display: none !important; padding-top: 1rem"
+        >
+          <a href="index.html" class="nav-link-custom d-block py-2">Home</a>
+          <a href="about.html" class="nav-link-custom d-block py-2">About</a>
+          <a href="filosofia.html" class="nav-link-custom d-block py-2"
+            >Philosophy</a
+          >
+          <a href="#" class="nav-link-custom d-block py-2">Blog</a>
+          <a href="eventos.html" class="nav-link-custom d-block py-2">Events</a>
+          <a href="index.html#contato" class="nav-link-custom d-block py-2"
+            >Contact</a
+          >
+          <div class="d-flex gap-2 mt-2 flex-wrap">
+            <a href="#" class="btn-nav-login">Já é membro? Entrar</a>
+            <a
+              href="index.html#planos"
+              class="btn-ahow"
+              style="font-size: 0.75rem"
+              >Iniciar Jornada</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ============================================================ FIM NAVBAR -->
+
+    <!-- ============================================================
+       HERO — SEÇÃO PRINCIPAL
+       ┌─────────────────────────────────────────────────────────┐
+       │  COMO TROCAR A IMAGEM DE FUNDO DO HERO:                 │
+       │  1. Coloque sua foto na pasta "imagens/"                 │
+       │  2. Substitua o estilo inline abaixo:                    │
+       │     style="background-image: url('imagens/SEU-ARQUIVO')" │
+       └─────────────────────────────────────────────────────────┘
+  ============================================================ -->
+    <section id="hero-eventos">
+      <!--
+      ▼▼▼ IMAGEM DE FUNDO DO HERO ▼▼▼
+      Substitua o background-color pelo background-image real:
+      style="background-image: url('imagens/hero-eventos.jpg');"
+    -->
+      <div
+        class="hero-bg"
+        style="
+          background: linear-gradient(
+            160deg,
+            #1a2e1a 0%,
+            #2d4a2d 40%,
+            #4a6e3a 80%,
+            #1a2e1a 100%
+          );
+        "
+      ></div>
+
+      <div class="hero-conteudo container">
+        <!-- ▼ TEXTO DO HERO — altere livremente ▼ -->
+        <span class="label-secao" style="color: rgba(255, 255, 255, 0.5)"
+          >Próximas Jornadas</span
+        >
+        <h1 class="hero-titulo">Eventos AHOW</h1>
+        <p class="hero-subtitulo">
+          Vivências, cursos, celebrações e encontros que marcam nossa caminhada.
+          Cada evento é um chamado para o autoconhecimento, a cura e a conexão
+          com todas as nossas relações.
+        </p>
+        <div class="hero-botoes">
+          <a href="#lista-eventos" class="btn-outline-branco"
+            >Explorar Galeria</a
+          >
+        </div>
+        <!-- ▲ FIM TEXTO DO HERO ▲ -->
+      </div>
+
+      <div
+        class="hero-scroll"
+        onclick="
+          document
+            .getElementById('lista-eventos')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </section>
+    <!-- ============================================================ FIM HERO -->
+
+    <!-- ============================================================
+       SEÇÃO INTRODUÇÃO — O RITUAL DA PRESENÇA
+       Texto editorial à esquerda + imagem à direita.
+       ┌─────────────────────────────────────────────────────────┐
+       │  COMO TROCAR A IMAGEM DA INTRODUÇÃO:                    │
+       │  Substitua a <div class="ritual-foto-placeholder">      │
+       │  por: <img src="imagens/SEU-ARQUIVO.jpg"                │
+       │             alt="Descrição" class="ritual-foto">        │
+       └─────────────────────────────────────────────────────────┘
+  ============================================================ -->
+    <section id="ritual">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- ▼ TEXTO DA INTRODUÇÃO ▼ -->
+          <div class="col-lg-6 reveal">
+            <h2 class="ritual-titulo">O Ritual da Presença</h2>
+            <p class="ritual-corpo">
+              A AHOW não propõe apenas eventos; criamos espaços sagrados de
+              transição. Através da sabedoria ancestral e da presença
+              consciente, nossas vivências são desenhadas para que cada buscador
+              encontre seu próprio centro dentro da roda da vida.
+            </p>
+            <p class="ritual-corpo">
+              Cada encontro é cuidadosamente preparado para honrar os ciclos
+              naturais, os ensinamentos tradicionais e o momento único de cada
+              pessoa que chega até nós.
+            </p>
+            <p class="ritual-citacao">
+              "Organizamos experiências, cursos e celebrações voltados ao
+              desenvolvimento espiritual e à reconexão profunda com a natureza,
+              honrando os ciclos que nos regem."
+            </p>
+          </div>
+          <!-- ▲ FIM TEXTO DA INTRODUÇÃO ▲ -->
+
+          <!-- ▼ IMAGEM DA INTRODUÇÃO ▼ -->
+          <div class="col-lg-6 reveal reveal-delay-1">
+            <!--
+            Substitua a div abaixo por:
+            <img src="imagens/ritual-presenca.jpg"
+                 alt="Ritual de presença"
+                 class="ritual-foto">
+          -->
+            <div class="ritual-foto-placeholder ph-bege"></div>
+          </div>
+          <!-- ▲ FIM IMAGEM DA INTRODUÇÃO ▲ -->
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================ FIM INTRODUÇÃO -->
+
+    <!-- ============================================================
+       TÍTULO DA SEÇÃO DE EVENTOS
+  ============================================================ -->
+    <section id="vivencias-cabecalho">
+      <div class="container">
+        <div class="reveal">
+          <span class="label-secao text-center d-block">Nossas Vivências</span>
+          <h2 class="vivencias-titulo">
+            Momentos de pausa e
+            <em style="font-family: var(--fonte-display); font-style: italic"
+              >profunda transformação.</em
+            >
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================ FIM TÍTULO -->
+
+    <!-- ============================================================
+       LISTA DE EVENTOS
+       ╔═════════════════════════════════════════════════════════╗
+       ║  COMO ADICIONAR UM NOVO EVENTO                         ║
+       ║                                                         ║
+       ║  1. Copie um bloco completo entre os comentários:       ║
+       ║     "INÍCIO EVENTO N" e "FIM EVENTO N"                  ║
+       ║                                                         ║
+       ║  2. Cole logo abaixo do último evento                   ║
+       ║                                                         ║
+       ║  3. Altere os textos indicados pelos comentários ▼ ▲   ║
+       ║                                                         ║
+       ║  4. Para eventos em posição par (2º, 4º, 6º...):        ║
+       ║     adicione a classe "invertido" na div.evento-bloco   ║
+       ║     para alternar imagem/texto de lado                  ║
+       ╚═════════════════════════════════════════════════════════╝
+  ============================================================ -->
+    <section id="lista-eventos">
+      <div class="container">
+        <!-- ══════════════════════════════════════════════════════
+           INÍCIO EVENTO 1
+           Posição: imagem à ESQUERDA (padrão)
+      ══════════════════════════════════════════════════════ -->
+        <div class="evento-bloco reveal">
+          <div class="row g-0 align-items-stretch">
+            <!-- ── COLUNA DAS IMAGENS (60% da largura) ── -->
+            <div class="col-lg-7 evento-imagem-col">
+              <!-- ▼ IMAGEM PRINCIPAL DO EVENTO 1 ▼
+                 Substitua a <div> por:
+                 <img src="imagens/evento-1-principal.jpg"
+                      alt="Nome do evento"
+                      class="evento-imagem-principal"> -->
+              <div class="evento-imagem-wrapper">
+                <img
+                  src="imagens/Img imersão Reiki Xamanica.png "
+                  alt="Nome do evento"
+                  class="evento-imagem-principal"
+                />
+                <div class="evento-imagem-placeholder ph-verde"></div>
+                <!-- ▼ BADGE DE CATEGORIA — altere o texto ▼ -->
+                <span class="evento-badge">Reiki Xamânico</span>
+              </div>
+              <!-- ▲ FIM IMAGEM PRINCIPAL ▲ -->
+
+              <!-- ▼ MINIATURAS DO EVENTO 1 (até 3 imagens) ▼
+                 Substitua cada <div> por:
+                 <img src="imagens/evento-1-foto-2.jpg"
+                      alt="Descrição"
+                      class="evento-miniatura"> -->
+              <div class="evento-miniaturas">
+                <div class="evento-miniatura-placeholder ph-musgo"></div>
+                <div class="evento-miniatura-placeholder ph-bege"></div>
+                <div class="evento-miniatura-placeholder ph-escuro"></div>
+              </div>
+              <!-- ▲ FIM MINIATURAS ▲ -->
+            </div>
+            <!-- ── FIM COLUNA IMAGENS ── -->
+
+            <!-- ── COLUNA DO TEXTO (40% da largura) ── -->
+            <div class="col-lg-5 evento-texto-col">
+              <div class="evento-texto-inner">
+                <!-- ▼ DATA DO EVENTO 1 — altere o texto ▼ -->
+                <span class="evento-data">Janeiro de 2026</span>
+
+                <!-- ▼ TÍTULO DO EVENTO 1 ▼ -->
+                <h2 class="evento-titulo">3ª Edição – Turma de Verão</h2>
+
+                <!-- ▼ SUBTÍTULO (opcional — apague a linha se não precisar) ▼ -->
+                <span class="evento-subtitulo"
+                  >Um chamado para o renascimento</span
+                >
+
+                <div class="evento-linha"></div>
+
+                <!-- ▼ DESCRIÇÃO COMPLETA DO EVENTO 1 ▼ -->
+                <p class="evento-descricao">
+                  Um chamado da alma para quem deseja começar o ano em verdade,
+                  cura e despertar. Em janeiro, abrimos novamente o círculo
+                  sagrado. Na força da natureza, na quietude da chácara e no
+                  pulsar dos elementos, um fim de semana transforma-se em
+                  passagem, e a passagem torna-se renascimento.
+                </p>
+                <!-- ▲ FIM DESCRIÇÃO ▲ -->
+
+                <!-- ▼ INFORMAÇÕES ADICIONAIS DO EVENTO 1
+                   Adicione ou remova linhas conforme necessário ▼ -->
+                <div class="evento-infos">
+                  <div class="evento-info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Chácara AHOW — Interior de SP</span>
+                  </div>
+                  <div class="evento-info-item">
+                    <i class="bi bi-calendar3"></i>
+                    <span>17 a 19 de Janeiro de 2026</span>
+                  </div>
+                  <div class="evento-info-item">
+                    <i class="bi bi-people"></i>
+                    <span>Vagas limitadas — turma reduzida</span>
+                  </div>
+                  <div class="evento-info-item">
+                    <i class="bi bi-info-circle"></i>
+                    <span>Inclui refeições e hospedagem</span>
+                  </div>
+                </div>
+                <!-- ▲ FIM INFORMAÇÕES ▲ -->
+
+                <!-- ▼ LINK DO EVENTO 1 — altere o href ▼ -->
+                <a href="#" class="evento-link">
+                  Saiba mais <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ── FIM COLUNA TEXTO ── -->
+          </div>
+        </div>
+        <!-- FIM EVENTO 1 ══════════════════════════════════════════ -->
+
+        <!-- ══════════════════════════════════════════════════════
+           INÍCIO EVENTO 2
+           Posição: imagem à DIREITA (classe "invertido")
+      ══════════════════════════════════════════════════════ -->
+        <div class="evento-bloco invertido reveal">
+          <div class="row g-0 align-items-stretch">
+            <!-- ── COLUNA DAS IMAGENS ── -->
+            <div class="col-lg-7 evento-imagem-col">
+              <!-- ▼ IMAGEM PRINCIPAL DO EVENTO 2 ▼ -->
+              <img
+                src="imagens/img Equinócio de Outono 20-03.png"
+                alt="Nome do evento"
+                class="evento-imagem-principal"
+              />
+              <div class="evento-imagem-wrapper">
+                <div class="evento-imagem-placeholder ph-terra"></div>
+                <!-- ▼ BADGE DE CATEGORIA ▼ -->
+                <span class="evento-badge">Celebração</span>
+              </div>
+
+              <!-- ▼ MINIATURAS DO EVENTO 2 ▼ -->
+              <div class="evento-miniaturas">
+                <div class="evento-miniatura-placeholder ph-cobre"></div>
+                <div class="evento-miniatura-placeholder ph-terra"></div>
+                <div class="evento-miniatura-placeholder ph-bege"></div>
+              </div>
+            </div>
+
+            <!-- ── COLUNA DO TEXTO ── -->
+            <div class="col-lg-5 evento-texto-col">
+              <div class="evento-texto-inner">
+                <!-- ▼ DATA DO EVENTO 2 ▼ -->
+                <span class="evento-data">Março de 2026</span>
+
+                <!-- ▼ TÍTULO DO EVENTO 2 ▼ -->
+                <h2 class="evento-titulo">Equinócio de Outono</h2>
+
+                <!-- ▼ SUBTÍTULO ▼ -->
+                <span class="evento-subtitulo">O Caminho para Dentro</span>
+
+                <div class="evento-linha"></div>
+
+                <!-- ▼ DESCRIÇÃO DO EVENTO 2 ▼ -->
+                <p class="evento-descricao">
+                  O Equinócio de Outono representa o equilíbrio entre luz e
+                  escuridão, um momento em que a natureza nos convida à
+                  introspecção. Após o ciclo de expansão do verão, inicia-se um
+                  tempo de recolhimento, desapego e transformação profunda.
+                </p>
+
+                <!-- ▼ INFORMAÇÕES DO EVENTO 2 ▼ -->
+                <div class="evento-infos">
+                  <div class="evento-info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Online e Presencial — São Paulo, SP</span>
+                  </div>
+                  <div class="evento-info-item">
+                    <i class="bi bi-calendar3"></i>
+                    <span>20 de Março de 2026</span>
+                  </div>
+                  <div class="evento-info-item">
+                    <i class="bi bi-people"></i>
+                    <span>Aberto ao público</span>
+                  </div>
+                </div>
+
+                <!-- ▼ LINK DO EVENTO 2 ▼ -->
+                <a href="#" class="evento-link">
+                  Saiba mais <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIM EVENTO 2 ══════════════════════════════════════════ -->
+
+        <!-- ══════════════════════════════════════════════════════
+           INÍCIO EVENTO 3
+           Posição: imagem à ESQUERDA (padrão)
+      ══════════════════════════════════════════════════════ -->
+        <div class="evento-bloco reveal">
+          <div class="row g-0 align-items-stretch">
+            <!-- ── COLUNA DAS IMAGENS ── -->
+            <div class="col-lg-7 evento-imagem-col">
+              <!-- ▼ IMAGEM PRINCIPAL DO EVENTO 3 ▼ -->
+              <div class="evento-imagem-wrapper">
+                <div class="evento-imagem-placeholder ph-escuro"></div>
+                <span class="evento-badge">Meditação</span>
+              </div>
+
+              <!-- ▼ MINIATURAS DO EVENTO 3 ▼ -->
+              <div class="evento-miniaturas">
+                <div class="evento-miniatura-placeholder ph-escuro"></div>
+                <div class="evento-miniatura-placeholder ph-musgo"></div>
+                <div class="evento-miniatura-placeholder ph-verde"></div>
+              </div>
+            </div>
+
+            <!-- ── COLUNA DO TEXTO ── -->
+            <div class="col-lg-5 evento-texto-col">
+              <div class="evento-texto-inner">
+                <!-- ▼ DATA DO EVENTO 3 ▼ -->
+                <span class="evento-data">Fevereiro de 2026</span>
+
+                <!-- ▼ TÍTULO DO EVENTO 3 ▼ -->
+                <h2 class="evento-titulo">Meditação dos Quatro Elementos</h2>
+
+                <!-- ▼ SUBTÍTULO ▼ -->
+                <span class="evento-subtitulo">Jornada guiada — ao vivo</span>
+
+                <div class="evento-linha"></div>
+
+                <!-- ▼ DESCRIÇÃO DO EVENTO 3 ▼ -->
+                <p class="evento-descricao">
+                  Uma jornada guiada pelos quatro elementos sagrados. Cada
+                  sessão convida o participante a acessar uma dimensão diferente
+                  de si mesmo — terra, água, fogo e ar como espelhos da psique e
+                  portais de transformação.
+                </p>
+
+                <!-- ▼ INFORMAÇÕES DO EVENTO 3 ▼ -->
+                <div class="evento-infos">
+                  <div class="evento-info-item">
+                    <i class="bi bi-camera-video"></i>
+                    <span>Online — transmissão ao vivo</span>
+                  </div>
+                  <div class="evento-info-item">
+                    <i class="bi bi-calendar3"></i>
+                    <span>Fevereiro de 2026 — data a confirmar</span>
+                  </div>
+                  <div class="evento-info-item">
+                    <i class="bi bi-people"></i>
+                    <span>Gratuito para assinantes</span>
+                  </div>
+                </div>
+
+                <!-- ▼ LINK DO EVENTO 3 ▼ -->
+                <a href="#" class="evento-link">
+                  Saiba mais <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIM EVENTO 3 ══════════════════════════════════════════ -->
+
+        <!--
+        ╔═════════════════════════════════════════════════════════╗
+        ║  ADICIONE NOVOS EVENTOS AQUI                           ║
+        ║                                                         ║
+        ║  Cole o bloco abaixo e preencha os campos:             ║
+        ║                                                         ║
+        ║  <div class="evento-bloco invertido reveal">           ║
+        ║    <div class="row g-0 align-items-stretch">           ║
+        ║      <div class="col-lg-7 evento-imagem-col">          ║
+        ║        <div class="evento-imagem-wrapper">             ║
+        ║          <div class="evento-imagem-placeholder ph-verde"></div> ║
+        ║          <span class="evento-badge">Categoria</span>   ║
+        ║        </div>                                           ║
+        ║        <div class="evento-miniaturas">                 ║
+        ║          <div class="evento-miniatura-placeholder ph-bege"></div> ║
+        ║          <div class="evento-miniatura-placeholder ph-terra"></div> ║
+        ║          <div class="evento-miniatura-placeholder ph-musgo"></div> ║
+        ║        </div>                                           ║
+        ║      </div>                                             ║
+        ║      <div class="col-lg-5 evento-texto-col">           ║
+        ║        <div class="evento-texto-inner">                ║
+        ║          <span class="evento-data">Mês de Ano</span>   ║
+        ║          <h2 class="evento-titulo">Título</h2>         ║
+        ║          <span class="evento-subtitulo">Subtítulo</span> ║
+        ║          <div class="evento-linha"></div>              ║
+        ║          <p class="evento-descricao">Descrição...</p>  ║
+        ║          <div class="evento-infos">                    ║
+        ║            <div class="evento-info-item">              ║
+        ║              <i class="bi bi-geo-alt"></i>             ║
+        ║              <span>Local</span>                        ║
+        ║            </div>                                       ║
+        ║          </div>                                         ║
+        ║          <a href="#" class="evento-link">              ║
+        ║            Saiba mais <i class="bi bi-arrow-right"></i> ║
+        ║          </a>                                           ║
+        ║        </div>                                           ║
+        ║      </div>                                             ║
+        ║    </div>                                               ║
+        ║  </div>                                                 ║
+        ╚═════════════════════════════════════════════════════════╝
+      --></div>
+    </section>
+    <!-- ============================================================ FIM LISTA DE EVENTOS -->
+
+    <!-- ============================================================
+       CTA — NEWSLETTER DE EVENTOS
+       Fundo verde escuro. Campo de e-mail para notificações.
+       ┌─────────────────────────────────────────────────────────┐
+       │  Para integrar com Mailchimp, ConvertKit ou outro:      │
+       │  substitua a função inscreverNewsletter() no JS abaixo  │
+       └─────────────────────────────────────────────────────────┘
+  ============================================================ -->
+    <section id="cta-eventos">
+      <div class="container">
+        <div class="reveal">
+          <span
+            class="label-secao text-center d-block"
+            style="color: rgba(255, 255, 255, 0.45)"
+            >Fique por dentro</span
+          >
+
+          <!-- ▼ TEXTO DO CTA — altere livremente ▼ -->
+          <h2 class="cta-titulo">Seja o primeiro a saber.</h2>
+          <p class="cta-subtitulo">
+            Receba em primeira mão os próximos eventos, vivências e encontros
+            AHOW diretamente no seu e-mail.
+          </p>
+          <!-- ▲ FIM TEXTO CTA ▲ -->
+
+          <div class="form-newsletter">
+            <input
+              type="email"
+              class="input-email"
+              placeholder="seu@email.com"
+              aria-label="E-mail"
+            />
+            <button class="btn-newsletter" onclick="inscreverNewsletter()">
+              Quero receber
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================ FIM CTA -->
+
+    <!-- ============================================================
+       FOOTER — idêntico às demais páginas
+  ============================================================ -->
+    <footer id="footer">
+      <div class="container">
+        <a href="index.html" class="footer-logo">AHOW</a>
+        <p class="footer-lema">Por todas as nossas relações.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+        <p class="footer-copy">Por todas as nossas relações. &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- ============================================================ FIM FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      /* ============================================================
+       NAVBAR — transparente no topo, sólida ao rolar
+    ============================================================ */
+      const navbar = document.getElementById("navbar");
+      function atualizarNavbar() {
+        navbar.classList.toggle("solida", window.scrollY > 60);
+        navbar.classList.toggle("transparente", window.scrollY <= 60);
+      }
+      window.addEventListener("scroll", atualizarNavbar);
+      atualizarNavbar();
+
+      /* ============================================================
+       MENU MOBILE — abre e fecha
+    ============================================================ */
+      const btnMenu = document.getElementById("btn-menu");
+      const menuMobile = document.getElementById("menu-mobile");
+      let aberto = false;
+      btnMenu.addEventListener("click", () => {
+        aberto = !aberto;
+        menuMobile.style.setProperty(
+          "display",
+          aberto ? "block" : "none",
+          "important",
+        );
+        btnMenu.querySelector("i").className = aberto
+          ? "bi bi-x fs-5"
+          : "bi bi-list fs-5";
+      });
+      menuMobile.querySelectorAll("a").forEach((l) =>
+        l.addEventListener("click", () => {
+          aberto = false;
+          menuMobile.style.setProperty("display", "none", "important");
+          btnMenu.querySelector("i").className = "bi bi-list fs-5";
+        }),
+      );
+
+      /* ============================================================
+       SCROLL REVEAL — anima elementos ao entrar na tela
+    ============================================================ */
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visivel");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+
+      /* ============================================================
+       SMOOTH SCROLL — ancora interna suave
+    ============================================================ */
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const t = document.querySelector(a.getAttribute("href"));
+          if (t) {
+            e.preventDefault();
+            t.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      /* ============================================================
+       NEWSLETTER
+       ┌───────────────────────────────────────────────────────┐
+       │  Substitua o conteúdo desta função pela integração    │
+       │  real com Mailchimp, ConvertKit, ou seu backend.      │
+       └───────────────────────────────────────────────────────┘
+    ============================================================ */
+      function inscreverNewsletter() {
+        const input = document.querySelector(".input-email");
+        const email = input.value.trim();
+        if (!email || !email.includes("@")) {
+          alert("Por favor, insira um e-mail válido.");
+          return;
+        }
+        // TODO: integrar com plataforma de e-mail marketing
+        alert(`Obrigado! Você será notificado em: ${email}`);
+        input.value = "";
+      }
+    </script>
+  </body>
+</html>
